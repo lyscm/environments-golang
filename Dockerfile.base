@@ -1,6 +1,5 @@
 # Note: You can use any Debian/Ubuntu based image you want. 
-ARG VARIANT="1.16"
-FROM --platform=$BUILDPLATFORM go:${VARIANT}
+FROM --platform=$BUILDPLATFORM golang
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
